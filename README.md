@@ -5,7 +5,7 @@ This is a modern, interactive web application that provides real-time access to 
 
 ## Features
 
-### 🌌 NASA Data Integration
+### NASA Data Integration
 - **Astronomy Picture of the Day (APOD)**: Daily space images with detailed descriptions and HD viewing
 - **Mars Rover Photos**: Explore images from NASA's Mars rovers (Curiosity, Opportunity, Spirit, Perseverance)
 - **Near Earth Objects (NEO)**: Track asteroids and comets approaching Earth with threat assessment
