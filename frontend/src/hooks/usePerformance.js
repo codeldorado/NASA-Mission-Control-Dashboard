@@ -28,7 +28,7 @@ export function usePerformance() {
       }))
       
       if (process.env.NODE_ENV === 'development') {
-        console.log(`🎯 ${componentName} render time: ${renderTime.toFixed(2)}ms`)
+        console.log(`${componentName} render time: ${renderTime.toFixed(2)}ms`)
       }
     }
   }, [])
@@ -86,7 +86,7 @@ export function usePerformance() {
         const entries = list.getEntries()
         entries.forEach((entry) => {
           if (entry.entryType === 'navigation') {
-            console.log('📊 Navigation timing:', {
+            console.log('Navigation timing:', {
               domContentLoaded: entry.domContentLoadedEventEnd - entry.domContentLoadedEventStart,
               loadComplete: entry.loadEventEnd - entry.loadEventStart,
               totalTime: entry.loadEventEnd - entry.fetchStart
