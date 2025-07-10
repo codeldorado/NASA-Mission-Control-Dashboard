@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: nasa-mission-control-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: NASA_API_KEY
+        sync: false
+      - key: CORS_ORIGIN
+        sync: false
+      - key: CACHE_TTL
+        value: 600000
+      - key: RATE_LIMIT_WINDOW
+        value: 900000
+      - key: RATE_LIMIT_MAX
+        value: 1000
+    scaling:
+      minInstances: 1
+      maxInstances: 3
+    disk:
+      name: nasa-api-disk
+      size: 1GB
+      mount: /tmp
