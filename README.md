@@ -1,9 +1,9 @@
-# 🚀 NASA Mission Control Dashboard
+# NASA Mission Control Dashboard
 
 This is a modern, interactive web application that provides real-time access to NASA's space data through their public APIs. Built with React, Node.js, and featuring an authentic space mission control aesthetic with comprehensive accessibility and performance optimization.
 
 
-## ✨ Features
+## Features
 
 ### 🌌 NASA Data Integration
 - **Astronomy Picture of the Day (APOD)**: Daily space images with detailed descriptions and HD viewing
@@ -23,7 +23,7 @@ This is a modern, interactive web application that provides real-time access to 
 - **Responsive Design**: Seamless experience across desktop, tablet, and mobile devices
 - **Smooth Animations**: Fluid transitions with reduced motion support for accessibility
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Frontend
 - **React 18** - Modern UI library with hooks and concurrent features
@@ -50,10 +50,10 @@ This is a modern, interactive web application that provides real-time access to 
 - **Nodemon** - Development server with hot reload
 - **Environment Configuration** - Secure environment variable management
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-bounce_insights_20250709/
+nasa-mission-control-dashboard/
 ├── frontend/                 # React application
 │   ├── src/
 │   │   ├── components/      # Reusable UI components
@@ -152,7 +152,7 @@ npm run dev
 - **API Health Check**: http://localhost:5000/api/health
 - **Performance Monitor**: Available in development mode (click the chart icon in header)
 
-## 🌐 API Endpoints
+## API Endpoints
 
 ### Health & System
 - `GET /api/health` - Server health status and system metrics
@@ -185,7 +185,7 @@ npm run dev
 - `GET /api/epic/natural` - Natural color images
 - `GET /api/epic/enhanced` - Enhanced color images
 
-## 🔒 Environment Variables
+## Environment Variables
 
 ### Backend Production Variables
 ```env
@@ -206,7 +206,7 @@ VITE_APP_VERSION=1.0.0
 VITE_ENVIRONMENT=production
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Running Tests
 
@@ -225,4 +225,3 @@ npm run test:a11y
 # Performance testing
 npm run test:performance
 ```
----
